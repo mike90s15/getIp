@@ -7,8 +7,8 @@ if ! [[ -f ".okay" ]]; then
   [[ -z "$(command -v openssh)" ]] && "${pkg}" i -y openssh &>/dev/null
   printf "\e[1;32m $\e[1;34m Instlando PHP\n"
   [[ -z "$(command -v php)" ]] && "${pkg}" i -y php &>/dev/null
-  printf "\e[1;33m Digite yes para continuar\n\n"
-  ssh -R 80:localhost:8181 nokey@localhost.run
+  printf "\e[1;33m Digite yes para continuar\e[m\n\n"
+  ssh -R 80:localhost:8181 nokey@localhost.run &>/dev/null &
   > .okay
 fi
 >> ips.txt
