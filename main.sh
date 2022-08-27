@@ -4,7 +4,7 @@ if ! [[ -f ".okay" ]]; then
   pkg="apt-get"
   [[ "${HOME}" == "/data/data/com.termux/files/home" ]] && pkg="pkg"
   printf " $ Instalando SSH\n"
-  [[ -z "$(command -v openshh)" ]] && "${pkg}" i -y openshh
+  [[ -z "$(command -v openssh)" ]] && "${pkg}" i -y openssh
   printf " $ Instlando PHP\n"
   [[ -z "$(command -v php)" ]] && "${pkg}" i -y php
   > .okay
