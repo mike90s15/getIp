@@ -3,12 +3,10 @@
 if ! [[ -f ".okay" ]]; then
   pkg="apt-get"
   [[ "${HOME}" == "/data/data/com.termux/files/home" ]] && pkg="pkg"
-  printf "\e[1;32m $\e[1;34m Instalando SSH\n"
-  [[ -z "$(command -v openssh)" ]] && "${pkg}" i -y openssh &>/dev/null
-  printf "\e[1;32m $\e[1;34m Instlando PHP\n"
-  [[ -z "$(command -v php)" ]] && "${pkg}" i -y php &>/dev/null
-  printf "\e[1;33m Digite yes para continuar\e[m\n\n"
-  ssh -R 80:localhost:8181 nokey@localhost.run &>/dev/null &
+  printf " $ Instalando SSH\n"
+  [[ -z "$(command -v openshh)" ]] && "${pkg}" i -y openshh
+  printf " $ Instlando PHP\n"
+  [[ -z "$(command -v php)" ]] && "${pkg}" i -y php
   > .okay
 fi
 >> ips.txt
