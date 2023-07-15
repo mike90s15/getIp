@@ -3,11 +3,11 @@
 ![](https://user-images.githubusercontent.com/82988362/187340595-c362d1a2-46af-4612-8784-8ea504fe3fb0.jpg)
 ### Instalação no Linux
 ```
-apt-get update -y && apt-get upgrade -y && apt-get install git -y && git clone https://github.com/mike90s15/getIp && cd getIp; bash A1.sh
+apt-get update -y && apt-get upgrade -y && apt-get install git clang -y && git clone https://github.com/mike90s15/getIp && cd getIp; bash A1.sh
 ```
 ### Instalação no Termux
 ```
-pkg up -y && pkg i git -y && git clone https://github.com/mike90s15/getIp && cd getIp; bash A1.sh
+pkg up -y && pkg i git clang -y && git clone https://github.com/mike90s15/getIp && cd getIp; bash A1.sh
 
 ```
 ## Redes sociais
