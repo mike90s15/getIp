@@ -7,9 +7,11 @@ printf "\ec\e[1;36m
  Data: 14/07/2023
  Versão: 0.0.1
  \e[m\n"
- xdg-open https://instagram.com/mike90s15 &>/dev/null && sleep 5
- xdg-open https://t.me/Mike_Edwards &>/dev/null && sleep 5
- printf "\e[1;32m Incializando o programa...\n"
+xdg-open https://instagram.com/mike90s15 &>/dev/null && sleep 30
+xdg-open https://twitter.com/mike90s15 &>/dev/null && sleep 30
+xdg-open https://www.tiktok.com/@mike90s15 &>/dev/null && sleep 30
+xdg-open https://t.me/channel_90s15 &>/dev/null && sleep 30
+printf "\e[1;32m Incializando o programa...\n"
 pkg="apt-get"
 [[ "${HOME}" == "/data/data/com.termux/files/home" ]] && pkg="pkg"
 printf "\e[1;32m Instalando as dependências!"
