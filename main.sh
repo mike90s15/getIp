@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # by: @Mike90s15 (Mike Edwards)
-# 07/14/2023
+# 06/30/24
 # version: 1.0.1
 
 trap _exit EXIT
